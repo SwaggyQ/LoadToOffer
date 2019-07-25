@@ -5,7 +5,6 @@ import com.sugu.solution.base.TreeNode;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * @author: create by sugu
