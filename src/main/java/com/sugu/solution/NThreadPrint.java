@@ -1,5 +1,8 @@
 package com.sugu.solution;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 /**
  * @author: create by sugu
  * @date:2019/8/1
@@ -16,6 +19,7 @@ class NThread extends Thread{
         this.lock = lock;
         this.curThreadNum = curThreadNum;
         this.threadCount = threadCount;
+        ExecutorService service = Executors.newFixedThreadPool(1);
     }
 
     @Override
