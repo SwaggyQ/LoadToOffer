@@ -8,7 +8,7 @@ import com.sugu.solution.base.ListNode;
  * @Number: 237
  * @Link: https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
  */
-public class 删除链表中的节点 {
+public class 删除链表中的节点237 {
 
     public void deleteNode(ListNode node) {
         node.val = node.next.val;

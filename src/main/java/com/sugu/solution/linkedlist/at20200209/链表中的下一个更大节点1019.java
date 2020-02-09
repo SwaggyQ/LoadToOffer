@@ -11,7 +11,7 @@ import java.util.Stack;
  * @Number: 1019
  * @Link: https://leetcode-cn.com/problems/next-greater-node-in-linked-list/
  */
-public class 链表中的下一个更大节点 {
+public class 链表中的下一个更大节点1019 {
 
     class TmpObject{
         Integer val;

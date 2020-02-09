@@ -11,7 +11,7 @@ import java.util.Map;
  * @Number: 1171
  * @Link: https://leetcode-cn.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/
  */
-public class 从链表中删去总和值为零的连续节点 {
+public class 从链表中删去总和值为零的连续节点1171 {
 
     /**map计算前缀和**/
     public ListNode removeZeroSumSublists(ListNode head) {

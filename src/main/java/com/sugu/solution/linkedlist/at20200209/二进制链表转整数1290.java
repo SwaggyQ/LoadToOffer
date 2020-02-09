@@ -8,7 +8,7 @@ import com.sugu.solution.base.ListNode;
  * @Number: 1290
  * @Link: https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer/
  */
-public class 二进制链表转整数 {
+public class 二进制链表转整数1290 {
     public int getDecimalValue(ListNode head) {
         Integer result = 0;
         while (head != null){
