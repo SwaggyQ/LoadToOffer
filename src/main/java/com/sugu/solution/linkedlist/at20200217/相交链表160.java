@@ -1,4 +1,4 @@
-package com.sugu.solution.linkedlist;
+package com.sugu.solution.linkedlist.at20200217;
 
 import com.sugu.solution.base.ListNode;
 
@@ -8,7 +8,7 @@ import com.sugu.solution.base.ListNode;
  * @Number: 160
  * @Link: https://leetcode-cn.com/problems/intersection-of-two-linked-lists/
  */
-public class 相交链表 {
+public class 相交链表160 {
 
 
     // bullshit solution
