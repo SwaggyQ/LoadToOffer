@@ -10,23 +10,16 @@ import com.sugu.solution.base.ListNode;
  */
 public class 反转链表 {
 
-    public static void main(String[] args) {
-        ListNode node1 = new ListNode(1);
-        ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(3);
 
-        node1.next = node2;
-        node2.next = node3;
-        reverseList(node1);
-    }
-
-    /**非迭代*/
+    /**
+     * 非迭代
+     */
     public static ListNode reverseList(ListNode head) {
-        if(head == null){
+        if (head == null) {
             return null;
         }
         ListNode pre = null;
-        while (head != null ){
+        while (head != null) {
             ListNode next = head.next;
             head.next = pre;
             pre = head;
@@ -36,9 +29,11 @@ public class 反转链表 {
     }
 
 
-    /**迭代*/
+    /**
+     * 迭代
+     */
     public static ListNode reverseList2(ListNode head) {
-        if (head == null || head.next == null){
+        if (head == null || head.next == null) {
             return head;
         }
         ListNode p = reverseList(head.next);
@@ -47,4 +42,34 @@ public class 反转链表 {
         return p;
     }
 
+    /**
+     * 迭代 review
+     */
+    public static ListNode reverseList3(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode p = reverseList3(head.next);
+        head.next.next = head;
+        head.next = null;
+        return p;
+    }
+
+    /**
+     * 非迭代 review
+     */
+    public static ListNode reverseList4(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+        ListNode pre = null;
+        while (head != null) {
+            ListNode curr = head.next;
+            head.next = pre;
+            pre = head;
+            head = curr;
+
+        }
+        return pre;
+    }
 }
