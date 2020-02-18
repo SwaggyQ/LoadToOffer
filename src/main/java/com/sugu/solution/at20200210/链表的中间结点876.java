@@ -1,4 +1,4 @@
-package com.sugu.solution.linkedlist.at20200210;
+package com.sugu.solution.at20200210;
 
 import com.sugu.solution.base.ListNode;
 
