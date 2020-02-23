@@ -60,4 +60,32 @@ public class 颜色分类 {
             int a=  1;
         }
     }
+
+
+    // better solition
+    public static void sortColors1(int[] nums) {
+        // a[0..zero] == 0
+        // a[zero+1..i-1] == 1
+        // a[two...n-1] ==2
+        int zero = 0;
+        int two = nums.length - 1;
+        int i = 0;
+        while (i<two){
+            if(nums[i] == 0){
+                int tmp = nums[zero];
+                nums[zero] = nums[i];
+                nums[i] = tmp;
+                i++;
+                zero++;
+            }else if(nums[i] == 1){
+                i++;
+            }else if(nums[i] == 2){
+                int tmp = nums[two];
+                nums[two] = nums[i];
+                nums[i] = tmp;
+                two--;
+                i++;
+            }
+        }
+    }
 }
